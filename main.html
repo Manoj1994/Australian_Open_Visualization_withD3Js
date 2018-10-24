@@ -1,0 +1,79 @@
+<html>
+
+<head>
+  <title>Analysing Australian Open</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bodyclass">
+  <script type="text/javascript" src="http://d3js.org/d3.v3.js"></script>
+  <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+  <div id="option">
+
+  <h1 class="title_head" >Visualizing<nav>
+  </nav>Australian Open Stats</h1>
+  <div>
+    <div style='padding-left:10%'>
+      <input name="winnersButton"
+             id = "winners"
+             type="button"
+             value="winners"
+             onclick="winnerUpdate()" />
+      <input name="acesButton"
+             id = "aces"
+             type="button"
+             value="aces"
+             onclick="acesUpdate()" />
+      <input name="totalButton"
+             id = "totalPoints"
+             type="button"
+             value="totalPoints"
+             onclick="totalUpdate()" />
+      <input name="serveButton"
+             id = "firstServe"
+             type="button"
+             value="firstServe"
+             onclick="firstServeUpdate()" />
+     <input name="serveButton"
+            id = "secondServe"
+            type="button"
+            value="secondServe"
+            onclick="secondServeUpdate()" />
+    <input name="errorButton"
+           id = "errors"
+           type="button"
+           value="errors"
+           onclick="errorUpdate()" />
+    </div>
+    <div>
+    <button class="button-class">
+    </div>
+    <div>
+    <button class="button-class">
+    </div>
+  </div>
+  <div class="container outer">
+    <!-- <div id="block1">
+    </div> -->
+    <div id="block5" style="flex:0 0 50%">
+    </div>
+    <div id="block4" style="flex:0 0 50%">
+    </div>
+    <div class="writing" style="flex:0 0 100%">
+      <h4><u>Plot-1 (Bars are clickable)</u></h4>
+      <p>Here we can see average individual stats of each player regarding firstServe, error, winners, total points, second serve and aces.
+        I took the stats from the player who won the match.
+        Using different Buttons on above graph1, changes the plot. If we select aces, it gives average number of aces player scored on all Australian open matches from 2004 to 2014.
+        I took some important players to analyze.
+        <h4><u>Plot-2 (Plot changes on selecting a bar in plot-1)</u></h4>
+      </p>Here we can average player specific stats in different rounds of game. Sometimes players may not enter knockout stages (Example Sam Query). This plot is for individual player. It can be updated by selecting graph of for a particular player. For example, if we select djokovic after clicking firstserve button, The plot updates to djokovic and displays number of average aces he scored in all matches including group stages and kncokouts.
+
+      <h4><u>Linkage Between Plot 1 and 2 :</u></h4>
+      <p>Selecting a player on first plot with specific category (Aces for Roger Federer) , gives average of that statistics in different rounds of that player across all Australian open Matches.<br/>
+      Example :  Click on Button Aces and then select player Nadal. Plot2 Automatically changes for that player with respect to aces.</p>
+    </div>
+  </div>
+    <script src="block.js"></script>
+</body>
+
+</html>
